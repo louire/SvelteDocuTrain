@@ -28,6 +28,8 @@
   }
   :global(:root) {
     --theme-color: purple;
+    --img-width: 100%;
+    --img-height: auto;
   }
 
   p {
@@ -44,8 +46,8 @@
     margin: 0 auto;
   }
   main img {
-    width: 100%;
-    height: auto;
+    width: var(--img-width);
+    height: var(--img-height);
   }
 
   h1 {
