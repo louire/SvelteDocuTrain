@@ -1,6 +1,8 @@
 <script>
   export let name;
   export let lastname;
+  let gatoLoco = "https://i.imgur.com/9bxvv1N.jpg";
+  let smurfCat = "https://i.imgur.com/de1BULN.jpeg";
 </script>
 
 <body>
@@ -8,9 +10,11 @@
     <h1>Hello {name} {lastname}!</h1>
     <h2>Alv ya se svelte</h2>
     <p>
-      Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn
-      how to build Svelte apps.
+      Data Analyst, Software Developer and a Computer Systems Engineer. I live
+      in Mexico
     </p>
+    <img src={gatoLoco} alt="Una foto de un Gato que esta loco" />
+    <img src={smurfCat} alt="Una foto de un GatoPitufo que esta loco" />
   </main>
 </body>
 
@@ -22,11 +26,26 @@
     background-color: #f2eee2;
     color: #0084f6;
   }
+  :global(:root) {
+    --theme-color: purple;
+  }
+
+  p {
+    color: var(--theme-color);
+    font-size: 25px;
+  }
+
+  /* Las variables de css solo aplican a lo que se le especifica */
+
   main {
     text-align: center;
     padding: 1em;
     max-width: 240px;
     margin: 0 auto;
+  }
+  main img {
+    width: 100%;
+    height: auto;
   }
 
   h1 {
