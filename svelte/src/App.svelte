@@ -1,9 +1,18 @@
 <script>
   import About from "./components/About.svelte";
+  import Person from "./components/Person.svelte";
+  import Text from "./components/Text.svelte";
   export let name;
   export let lastname;
   let gatoLoco = "https://i.imgur.com/9bxvv1N.jpg";
   let smurfCat = "https://i.imgur.com/de1BULN.jpeg";
+  
+  const data = {
+    name: "Loui",
+    lastName: "Recio",
+    age: 23
+  }
+
 </script>
 
 
@@ -61,6 +70,8 @@
     <h1>Hello {name} {lastname}!</h1>
     <h2>Alv ya se svelte</h2>
     <About />
+    <Text anotherText="Otro texto" />
+    <Person {...data} />
     <img src={gatoLoco} alt="Una foto de un Gato que esta loco" />
     <img src={smurfCat} alt="Una foto de un GatoPitufo que esta loco" />
   </main>
