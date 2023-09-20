@@ -6,15 +6,6 @@
   let smurfCat = "https://i.imgur.com/de1BULN.jpeg";
 </script>
 
-<body>
-  <main>
-    <h1>Hello {name} {lastname}!</h1>
-    <h2>Alv ya se svelte</h2>
-    <About />
-    <img src={gatoLoco} alt="Una foto de un Gato que esta loco" />
-    <img src={smurfCat} alt="Una foto de un GatoPitufo que esta loco" />
-  </main>
-</body>
 
 <style>
   /* Las funciones globales de css aplica a todo lo que no se le especifica */
@@ -30,7 +21,6 @@
     --img-height: auto;
   }
 
-  
 
   /* Las variables de css solo aplican a lo que se le especifica */
 
@@ -64,3 +54,14 @@
     }
   }
 </style>
+
+
+<body>
+  <main>
+    <h1>Hello {name} {lastname}!</h1>
+    <h2>Alv ya se svelte</h2>
+    <About />
+    <img src={gatoLoco} alt="Una foto de un Gato que esta loco" />
+    <img src={smurfCat} alt="Una foto de un GatoPitufo que esta loco" />
+  </main>
+</body>
