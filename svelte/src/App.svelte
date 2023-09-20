@@ -1,4 +1,5 @@
 <script>
+  import About from "./components/About.svelte";
   export let name;
   export let lastname;
   let gatoLoco = "https://i.imgur.com/9bxvv1N.jpg";
@@ -9,10 +10,7 @@
   <main>
     <h1>Hello {name} {lastname}!</h1>
     <h2>Alv ya se svelte</h2>
-    <p>
-      Data Analyst, Software Developer and a Computer Systems Engineer. I live
-      in Mexico
-    </p>
+    <About />
     <img src={gatoLoco} alt="Una foto de un Gato que esta loco" />
     <img src={smurfCat} alt="Una foto de un GatoPitufo que esta loco" />
   </main>
@@ -28,14 +26,11 @@
   }
   :global(:root) {
     --theme-color: purple;
-    --img-width: 100%;
+    --img-width: 30%;
     --img-height: auto;
   }
 
-  p {
-    color: var(--theme-color);
-    font-size: 25px;
-  }
+  
 
   /* Las variables de css solo aplican a lo que se le especifica */
 
