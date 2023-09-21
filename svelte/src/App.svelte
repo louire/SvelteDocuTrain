@@ -2,8 +2,11 @@
   import About from "./components/About.svelte";
   import Person from "./components/Person.svelte";
   import Text from "./components/Text.svelte";
+  import Skills from "./components/Skills.svelte";
+
   export let name;
   export let lastname;
+
   let gatoLoco = "https://i.imgur.com/9bxvv1N.jpg";
   let smurfCat = "https://i.imgur.com/de1BULN.jpeg";
   
@@ -70,6 +73,7 @@
   <main>
     <h1>Hello {name} {lastname}!</h1>
     <h2>Alv ya se svelte</h2>
+    <Skills />
     <About />
     <Text anotherText="Otro texto" />
     <Person {...data} />
