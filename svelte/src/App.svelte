@@ -19,9 +19,6 @@
 <style>
   /* Las funciones globales de css aplica a todo lo que no se le especifica */
   :global(body) {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Ubuntu, "Helvetica Neue", sans-serif;
-    background-color: #f2eee2;
     color: #0084f6;
   }
   :global(:root) {
@@ -30,6 +27,10 @@
     --img-height: auto;
   }
 
+  :global(body.dark-mode) {
+    background-color: #1d3040;
+    color: #bfc2c7;
+  }
 
   /* Las variables de css solo aplican a lo que se le especifica */
 
