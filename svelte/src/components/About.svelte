@@ -43,13 +43,15 @@
     <button on:click={handleClick}>
         Click me {count == 0 ? '' : count}
     </button>
+
     <button on:click={resetClick}>
+
         Reset me
     </button>
     <p>
         {docuText}
     </p>
     <button on:click={toggleDarkMode}>
-        Toggle Dark Mode
+        Toggle DarkMode
     </button>
 </div>
