@@ -3,6 +3,7 @@
   import Person from "./components/Person.svelte";
   import Text from "./components/Text.svelte";
   import Skills from "./components/Skills.svelte";
+  import Input from "./components/Input.svelte";
 
   export let name;
   export let lastname;
@@ -72,7 +73,8 @@
 <body>
   <main>
     <h1>Hello {name} {lastname}!</h1>
-    <h2>Alv ya se svelte</h2>
+    <h2>Habemus Svelte</h2>
+    <Input />
     <Skills />
     <About />
     <Text anotherText="Otro texto" />

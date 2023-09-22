@@ -1,4 +1,6 @@
 <script>
+    import Button from './Button.svelte';
+
     let someText = `Data Analyst, Software Developer and a Computer Systems Engineer. I live
       in Mexico`;
     let docuText = `? es un if y : es un else`;
@@ -34,7 +36,9 @@
         <span>Hello Dark mode</span>
     </p>
 {/if}
-
+    <Button text ="Click Me" count = {count} on:click={handleClick}/>
+    <Button text ="Reset Me" on:click={resetClick}/>
+    <Button text ="Toggle Dark Mode" on:click={toggleDarkMode}/>
     
     <button on:click={handleClick}>
         Click me {count == 0 ? '' : count}
