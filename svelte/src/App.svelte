@@ -5,6 +5,7 @@
   import Skills from "./components/Skills.svelte";
   import Input from "./components/Input.svelte";
   import Photos from "./components/Photos.svelte";
+  import ButtonCount from "./components/ButtonCount.svelte";
   export let name;
   export let lastname;
 
@@ -78,8 +79,11 @@
     <Skills />
     <About />
     <Text anotherText="Otro texto" />
+    
     <Person {...data} />
+    <ButtonCount />
     <Photos/>
+    
     <img src={gatoLoco} alt="Una foto de un Gato que esta loco" />
     <img src={smurfCat} alt="Una foto de un GatoPitufo que esta loco" />
   </main>
