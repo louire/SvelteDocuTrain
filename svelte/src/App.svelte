@@ -4,7 +4,7 @@
   import Text from "./components/Text.svelte";
   import Skills from "./components/Skills.svelte";
   import Input from "./components/Input.svelte";
-
+  import Photos from "./components/Photos.svelte";
   export let name;
   export let lastname;
 
@@ -79,6 +79,7 @@
     <About />
     <Text anotherText="Otro texto" />
     <Person {...data} />
+    <Photos/>
     <img src={gatoLoco} alt="Una foto de un Gato que esta loco" />
     <img src={smurfCat} alt="Una foto de un GatoPitufo que esta loco" />
   </main>
